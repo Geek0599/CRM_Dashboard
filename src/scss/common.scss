@@ -1,0 +1,38 @@
+// Заголовки, общие БЄМ блоки и проче...
+.title {
+	@include adaptiveValue("font-size", 24, 20);
+	font-weight: 500;
+}
+.section-title {
+	font-size: rem(22);
+	letter-spacing: -0.22px;
+	font-weight: 600;
+}
+.input {
+	width: 100%;
+	outline: none;
+	font-size: rem(12);
+	letter-spacing: -0.12px;
+	height: rem(38);
+	color: $light-gray;
+	background-color: $search-field;
+	border-radius: rem(10);
+	transition: box-shadow 0.15s ease 0s;
+	&:not(:placeholder-shown){
+		color: #000;
+	}
+	&:focus{
+		box-shadow: 0 0 3px 0px #7575759b;
+	}
+}
+.btn {
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	border-radius: rem(4);
+	letter-spacing: -0.14px;
+	min-height: rem(29);
+	min-width: rem(80);
+}

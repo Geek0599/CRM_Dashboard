@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"CRM Dashboard"
+	})
+	<body>
+		<div class="wrapper">
+			<main class="page">
+				<div class="crm-info">
+					<div data-tabs class="crm-info__container">
+						<aside class="crm-info__menu-aside crm-menu-aside">
+							<a href="#" class="crm-menu-aside__logo logo-crm">
+								<img src="@img/logo.svg" alt="logo Dashboard">
+								<span class="logo-crm__version">v.01</span>
+							</a>
+							<nav class="crm-menu-aside__menu crm-menu">
+								<ul data-tabs-titles class="crm-menu__list">
+									<li class="crm-menu__item">
+										<a href="#" class="crm-menu__link">
+											<i class="crm-menu-icon _icon-key" role="img" aria-label="key icon"></i>
+											Dashboard
+										</a>
+									</li>
+									<li class="crm-menu__item">
+										<a href="#" class="crm-menu__link _icon-link-arrow">
+											<i class="crm-menu-icon _icon-d-square" role="img" aria-label="3-d square icon"></i>
+											Product
+										</a>
+									</li>
+									<li class="crm-menu__item _tab-active">
+										<a href="#" class="crm-menu__link _icon-link-arrow">
+											<i class="crm-menu-icon _icon-user" role="img" aria-label="user icon"></i>
+											Customers
+										</a>
+									</li>
+									<li class="crm-menu__item">
+										<a href="#" class="crm-menu__link _icon-link-arrow">
+											<i class="crm-menu-icon _icon-wallet" role="img" aria-label="wallet icon"></i>
+											Income
+										</a>
+									</li>
+									<li class="crm-menu__item">
+										<a href="#" class="crm-menu__link _icon-link-arrow">
+											<i class="crm-menu-icon _icon-discount" role="img" aria-label="discount icon"></i>
+											Promote
+										</a>
+									</li>
+									<li class="crm-menu__item">
+										<a href="#" class="crm-menu__link _icon-link-arrow">
+											<i class="crm-menu-icon _icon-message-question" role="img" aria-label="message-question icon"></i>
+											Help
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="crm-menu-aside__user-info user-info">
+								<div class="user-info__image-ibg user-info__image-ibg_contain">
+									<img src="@img/user.png" alt="user image">
+								</div>
+								<div class="user-info__row">
+									<h2 class="user-info__name">Evano</h2>
+									<p class="user-info__position">Project Manager</p>
+								</div>
+							</div>
+						</aside>
+						<div class="crm-info__main">
+							<h1 class="crm-info__title title">Hello Evano 👋🏼,</h1>
+							<div data-tabs-body class="crm-info__sections crm-info-sections">
+								<section class="crm-info-sections__item crm-info-sections__item--dashboard section-dashboard">
+									<div class="crm-info-sections__head">
+										<div class="crm-info-sections__column-text">
+											<h3 class="crm-info-sections__title section-title">Dashboard</h3>
+											<div class="crm-info-sections__output">Dashboard information</div>
+										</div>
+									</div>
+								</section>
+								<section class="crm-info-sections__item crm-info-sections__item--product section-product">
+									<div class="crm-info-sections__head">
+										<div class="crm-info-sections__column-text">
+											<h3 class="crm-info-sections__title section-title">All Product</h3>
+											<div class="crm-info-sections__output">Product information</div>
+										</div>
+									</div>
+								</section>
+								<section class="crm-info-sections__item crm-info-sections__item--customers section-customers">
+									<div class="crm-info-sections__head">
+										<div class="crm-info-sections__column-text">
+											<h3 class="crm-info-sections__title section-title">All Customers</h3>
+											<div class="crm-info-sections__output">Active Members</div>
+										</div>
+										<form action="#" class="section-customers__search search">
+											<button type="submit" class="search__btn-submit">
+												<i class="search__icon _icon-search" role="img" aria-label="search icon"></i>
+											</button>
+											<input type="text" name="search_query" placeholder="Search" class="search__input input">
+										</form>
+									</div>
+									<div class="section-customers__table customers-table">
+										<div class="customers-table__header">
+											<h3 class="customers-table__header-item">Customer Name</h3>
+											<h3 class="customers-table__header-item">Company</h3>
+											<h3 class="customers-table__header-item">Phone Number</h3>
+											<h3 class="customers-table__header-item">Email</h3>
+											<h3 class="customers-table__header-item">Country</h3>
+											<h3 class="customers-table__header-item customers-table__header-item--status">Status</h3>
+										</div>
+										<ul class="customers-table__list">
+											<li class="customers-table__item customers-table-item">
+												<div class="customers-table-item__info"><span>Customer Name: </span>Jane Cooper</div>
+												<div class="customers-table-item__info"><span>Company: </span>Microsoft</div>
+												<a href="tel:2255550118" class="customers-table-item__info"><span>Phone Number: </span>(225) 555-0118</a>
+												<a href="mailto:jane@microsoft.com" class="customers-table-item__info"><span>Email: </span>jane@microsoft.com</a>
+												<div class="customers-table-item__info"><span>Country:</span>United States</div>
+												<div class="customers-table-item__status btn _active">Active<span> status</span></div>
+											</li>
+											<li class="customers-table__item customers-table-item">
+												<div class="customers-table-item__info"><span>Customer Name: </span>Floyd Miles</div>
+												<div class="customers-table-item__info"><span>Company: </span>Yahoo</div>
+												<a href="tel:2055550100" class="customers-table-item__info"><span>Phone Number: </span>(205) 555-0100</a>
+												<a href="mailto:jane@microsoft.com" class="customers-table-item__info"><span>Email:</span>floyd@yahoo.com</a>
+												<div class="customers-table-item__info"><span>Country:</span>Kiribati</div>
+												<div class="customers-table-item__status btn">Inactive<span> status</span></div>
+											</li>
+											<li class="customers-table__item customers-table-item">
+												<div class="customers-table-item__info"><span>Customer Name: </span>Ronald Richards</div>
+												<div class="customers-table-item__info"><span>Company: </span>Adobe</div>
+												<a href="tel:3025550107" class="customers-table-item__info"><span>Phone Number: </span>(302) 555-0107</a>
+												<a href="mailto:jane@microsoft.com" class="customers-table-item__info"><span>Email:</span>ronald@adobe.com</a>
+												<div class="customers-table-item__info"><span>Country:</span>Israel</div>
+												<div class="customers-table-item__status btn">Inactive<span> status</span></div>
+											</li>
+											<li class="customers-table__item customers-table-item">
+												<div class="customers-table-item__info"><span>Customer Name: </span>Marvin McKinney</div>
+												<div class="customers-table-item__info"><span>Company: </span>Tesla</div>
+												<a href="tel:2525550126" class="customers-table-item__info"><span>Phone Number: </span>(252) 555-0126</a>
+												<a href="mailto:jane@microsoft.com" class="customers-table-item__info"><span>Email:</span>ronald@adobe.com</a>
+												<div class="customers-table-item__info"><span>Country:</span>Israel</div>
+												<div class="customers-table-item__status btn _active">Inactive<span> status</span></div>
+											</li>
+											<li class="customers-table__item customers-table-item">
+												<div class="customers-table-item__info"><span>Customer Name: </span>Jerome Bell</div>
+												<div class="customers-table-item__info"><span>Company: </span>Google</div>
+												<a href="tel:6295550129" class="customers-table-item__info"><span>Phone Number: </span>(629) 555-0129</a>
+												<a href="mailto:jerome@google.com" class="customers-table-item__info"><span>Email:</span>jerome@google.com</a>
+												<div class="customers-table-item__info"><span>Country:</span>Réunion</div>
+												<div class="customers-table-item__status btn _active">Active<span> status</span></div>
+											</li>
+											<li class="customers-table__item customers-table-item">
+												<div class="customers-table-item__info"><span>Customer Name:</span>Kathryn Murphy</div>
+												<div class="customers-table-item__info"><span>Company:</span>Microsoft</div>
+												<a href="tel:4065550120" class="customers-table-item__info"><span>Phone Number:</span>(406) 555-0120</a>
+												<a href="mailto:kathryn@microsoft.com" class="customers-table-item__info"><span>Email:</span>kathryn@microsoft.com</a>
+												<div class="customers-table-item__info"><span>Country:</span>Curaçao</div>
+												<div class="customers-table-item__status btn _active">Active<span> status</span></div>
+											</li>
+											<li class="customers-table__item customers-table-item">
+												<div class="customers-table-item__info"><span>Customer Name:</span>Jacob Jones</div>
+												<div class="customers-table-item__info"><span>Company:</span>Yahoo</div>
+												<a href="tel:2085550112" class="customers-table-item__info"><span>Phone Number: </span>(208) 555-0112</a>
+												<a href="mailto:kathryn@microsoft.com" class="customers-table-item__info"><span>Email:</span>jacob@yahoo.com</a>
+												<div class="customers-table-item__info"><span>Country:</span>Brazil</div>
+												<div class="customers-table-item__status btn _active">Active<span> status</span></div>
+											</li>
+											<li class="customers-table__item customers-table-item">
+												<div class="customers-table-item__info"><span>Customer Name:</span>Kristin Watson</div>
+												<div class="customers-table-item__info"><span>Company:</span>Facebook</div>
+												<a href="tel:7045550127" class="customers-table-item__info"><span>Phone Number:</span>(704) 555-0127</a>
+												<a href="mailto:kristin@facebook.com" class="customers-table-item__info"><span>Email:</span>kristin@facebook.com</a>
+												<div class="customers-table-item__info"><span>Country:</span>Åland Islands</div>
+												<div class="customers-table-item__status btn">Inactive<span> status</span></div>
+											</li>
+										</ul>
+									</div>
+									<div class="section-customers__pagitaion pagination">
+										<div class="pagination__data-result">Showing data 1 to 8 of 256K entries</div>
+										<div class="pagination__controls">
+											<button disabled class="pagination__item pagination__arrow pagination__arrow--prev _icon-arrow-pagination"></button>
+											<ul class="pagination__list">
+												<li>
+													<a href="#" class="pagination__item _active">1</a>
+												</li>
+												<li>
+													<a href="#" class="pagination__item">2</a>
+												</li>
+												<li>
+													<a href="#" class="pagination__item">3</a>
+												</li>
+												<li>
+													<a href="#" class="pagination__item">4</a>
+												</li>
+												<li>
+													<div href="#" class="pagination__dots">...</div>
+												</li>
+												<li>
+													<a href="#" class="pagination__item">40</a>
+												</li>
+											</ul>
+											<button class="pagination__item pagination__arrow pagination__arrow--next _icon-arrow-pagination"></button>
+										</div>
+									</div>
+								</section>
+								<section class="crm-info-sections__item crm-info-sections__item--income section-income">
+									<div class="crm-info-sections__head">
+										<div class="crm-info-sections__column-text">
+											<h3 class="crm-info-sections__title section-title">All Income</h3>
+											<div class="crm-info-sections__output">Income information</div>
+										</div>
+									</div>
+								</section>
+								<section class="crm-info-sections__item crm-info-sections__item--promote section-promote">
+									<div class="crm-info-sections__head">
+										<div class="crm-info-sections__column-text">
+											<h3 class="crm-info-sections__title section-title">All Promote</h3>
+											<div class="crm-info-sections__output">Promote information</div>
+										</div>
+									</div>
+								</section>
+								<section class="crm-info-sections__item crm-info-sections__item--help section-help">
+									<div class="crm-info-sections__head">
+										<div class="crm-info-sections__column-text">
+											<h3 class="crm-info-sections__title section-title">Dashboard Help</h3>
+											<div class="crm-info-sections__output">Help information</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
